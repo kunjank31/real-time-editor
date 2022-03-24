@@ -16,6 +16,11 @@ const Home = () => {
       },
     });
   };
+  const keyUp = (e) => {
+    if (e.code === "Enter" || e.code === "NumpadEnter") {
+      sumbit(e);
+    }
+  };
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
@@ -50,6 +55,7 @@ const Home = () => {
                 name="username"
                 className={style.input}
                 value={username}
+                onKeyUp={keyUp}
                 onChange={(e) => setUsername(e.target.value)}
               />
             </div>

@@ -1,6 +1,7 @@
 .box {
   background-color: var(--white);
-  width: 400px;
+  max-width: 100%;
+  min-width: 400px;
   height: 400px;
   position: absolute;
   right: 6%;
@@ -44,4 +45,10 @@
   padding: 0.5rem;
   height: calc(400px - 46px - 44px);
   overflow-y: scroll;
+}
+
+@media (max-width:500px) {
+  .box{
+    right:unset;
+  }
 }

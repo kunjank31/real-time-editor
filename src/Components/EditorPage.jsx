@@ -88,21 +88,20 @@ const EditorPage = () => {
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
-      <div
-        className={style.container}
-      >
-        <div className={`${style.left}  ${
-          closeMenu ? style.open : style.close
-        }`}>
+      <img
+        src="/ham.png"
+        alt=""
+        className={style.closeImg}
+        onClick={() => setCloseMenu(!closeMenu)}
+      />
+      <div className={style.container}>
+        <div
+          className={`${style.left}  ${closeMenu ? style.open : style.close}`}
+          // onClick={() => setCloseMenu(!closeMenu)}
+        >
           <div className={style.logo}>
             <img src="/logo.png" alt="" className={style.img} />
             <h1 className={style.h1}>Coding Lab</h1>
-            <img
-              src="/ham.png"
-              alt=""
-              className={style.closeImg}
-              onClick={() => setCloseMenu(!closeMenu)}
-            />
           </div>
           <hr />
           <h2 className={style.h2}>Connected User</h2>
@@ -136,7 +135,11 @@ const EditorPage = () => {
             frameBorder="0"
           ></iframe> */}
         </div>
-        <ChatBox username={location.state?.username} roomId={roomId} socketRef={socketRef} />
+        <ChatBox
+          username={location.state?.username}
+          roomId={roomId}
+          socketRef={socketRef}
+        />
       </div>
     </>
   );

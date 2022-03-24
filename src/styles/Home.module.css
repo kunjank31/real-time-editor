@@ -7,8 +7,10 @@
   align-items: center;
 }
 .center {
-  width: 30vw;
-  height: 40vh;
+  max-width: 100%;
+  min-width: 30vw;
+  max-height: 100%;
+  min-height: 40vh;
   background-color: var(--secondaryColor);
   border-radius: 10px;
 }
@@ -58,6 +60,7 @@
 .p {
   color: var(--white);
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 .createRoom {
   color: var(--yellow);
