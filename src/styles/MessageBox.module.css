@@ -1,0 +1,32 @@
+.main {
+  width: 80%;
+  margin-bottom: 0.8rem;
+}
+
+.messageBox {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.primary {
+  background-color: var(--primaryColor);
+}
+.secondary {
+  background-color: var(--secondaryColor);
+}
+.marginAdd {
+  margin-left: auto;
+}
+.marginLess {
+  margin-left: 0;
+}
+.span {
+  font-size: 15px;
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.right {
+  text-align: end;
+}

@@ -1,0 +1,85 @@
+.container {
+  composes: container from "./Home.module.css";
+}
+.logo {
+  composes: logo from "./Home.module.css";
+}
+.img {
+  composes: img from "./Home.module.css";
+  width: 30px;
+}
+.h1 {
+  composes: h1 from "./Home.module.css";
+  font-size: 25px;
+}
+.left {
+  /* width: 15%; */
+  min-width: 20%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--secondaryColor);
+}
+.right {
+  width: 100%;
+  height: 100vh;
+}
+.h2 {
+  color: var(--white);
+  padding: 1rem;
+  font-size: 18px;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  color: var(--white);
+}
+
+.btnGroup {
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+  padding: 1rem;
+}
+.btn1,
+.btn2 {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--yellow);
+  font-weight: bolder;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+}
+.btn1 {
+  background-color: transparent;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.btn2 {
+  background-color: var(--yellow);
+  color: var(--secondaryColor);
+}
+.btn1:hover,
+.btn2:hover {
+  background-color: var(--white);
+  color: var(--secondaryColor);
+}
+.closeImg {
+  width: 30px;
+  display: none;
+}
+.open {
+  transform: translateX(-155px);
+}
+.close {
+  transform: translateX(0);
+}
+
+@media (max-width: 832px) {
+  .closeImg {
+    display: block;
+  }
+}

@@ -1,0 +1,47 @@
+.box {
+  background-color: var(--white);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+}
+.img {
+  width: 30px;
+}
+.inputBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+  box-shadow: 0px -5px 42px -3px rgba(0, 0, 0, 0.41);
+  position: absolute;
+  bottom: 2px;
+  background-color: var(--white);
+}
+.input {
+  composes: input from "./Home.module.css";
+  border: 2px solid var(--yellow) !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+.btn {
+  composes: btn from "./Home.module.css";
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+.message_box_wrapper {
+  padding: 0.5rem;
+  height: calc(400px - 46px - 44px);
+  overflow-y: scroll;
+}
